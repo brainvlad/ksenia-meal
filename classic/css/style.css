@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1064px;
+  margin: auto;
+}
+
+.welcome {
+  min-height: 600px;
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(./../img/welcome-bh.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.welcome__logo {
+  transition: all;
+  opacity: 1;
+  animation-name: welcome-logo;
+  animation-duration: 2s;
+  transform: translateX(-600px);
+}
+@keyframes welcome-logo {
+  0% {
+    opacity: 0;
+    transform: translate(-600px, 20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-600px, 0);
+  }
+}
+
+.header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.header__logo {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+}
+.header__main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 120px;
+}
+.header__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  transition: all 0.25s;
+}
+.header__link:hover {
+  opacity: 0.5;
+}
+
+.head {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.head__title {
+  padding-left: 160px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 30px;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  font-feature-settings: "kern" off;
+}
+.head__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.article {
+  display: flex;
+  flex-direction: s;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+}
+.col-1 {
+  max-width: 400px;
+}
+.col-2 {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col-2 img {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  max-width: 450px;
+}
+.about__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  padding-left: 60px;
+}
+.about__desc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+.about__txt {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.menu {
+  padding-top: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+  align-items: center;
+  justify-content: center;
+}
+.menu__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 19px;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+.menu__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 28px;
+  border-bottom: 1px solid #000;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 140px;
+  justify-content: space-around;
+  padding-bottom: 120px;
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+}
+.contact__block {
+}
+.contact__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 19px;
+  padding-bottom: 26px;
+}
+.contact__subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 28px;
+  padding-bottom: 14px;
+}
+.contact__item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 36px;
+}
+.contact__map {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+.contact__map-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 19px;
+}
+.contact__map iframe {
+  background-color: #ccc;
+}
+
+.footer {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  background-color: #e0e0e0;
+}
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 19px;
+  padding-bottom: 32px;
+}
+.footer__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 28px;
+}
