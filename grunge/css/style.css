@@ -93,6 +93,9 @@ body {
 }
 .gallery__list {
   position: relative;
+  margin: auto;
+  max-width: 900px;
+  overflow-x: scroll;
   z-index: 10;
   height: inherit;
   display: flex;
