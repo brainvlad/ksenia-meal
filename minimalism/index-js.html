@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/hamburger-js.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./js/burger.js" defer></script>
+  </head>
+  <body>
+    <div class="hamburger-menu">
+      <label class="menu__btn">
+        <span></span>
+      </label>
+
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#home">Главная</a></li>
+        <li><a class="menu__item" href="#advatage">Услуги</a></li>
+        <li><a class="menu__item" href="#about">О нас</a></li>
+        <li><a class="menu__item" href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="welcome" id="home">
+      <div class="welcome__logo">
+        <img src="./img/welcome-logo.png" alt="" />
+      </div>
+      <div class="welcome__picture">
+        <img src="./img/welcome-picture.png" alt="" />
+      </div>
+    </div>
+    <div class="wine">
+      <div class="wine__picture">
+        <img src="./img/wine-img.png" alt="" />
+      </div>
+      <div class="wine__title">
+        Изысканная европейская кухня & Бургундское вино
+      </div>
+    </div>
+    <div class="about">
+      <div class="about__picture">
+        <img src="./img/about.png" alt="" />
+      </div>
+      <div class="about__txt">
+        <div class="about__title">О НАС</div>
+        <div class="about__desc">
+          Ресторан MEAL, расположенный в самом сердце Минска пропитан историей
+          кулинарии. Шеф-повар Эдди Канас и шеф-кондитер Шэй Ленус представляют
+          современное меню, вдохновленное лучшим мясом, дичью, морепродуктами,
+          фруктами и овощами со всего мира. Вина из Роны и Бургундии входят в
+          число заслуживающих внимания изюминок погреба ресторана.
+        </div>
+      </div>
+    </div>
+    <div class="advantage wine" id="advatage">
+      <div class="wine__picture">
+        <img src="./img/advantage.png" alt="" />
+      </div>
+      <div class="about__txt">
+        <div class="about__title">УСЛУГИ</div>
+        <div class="about__desc">
+          MEAL предоставляет уникальную и современную обстановку для проведения
+          мероприятий с участием до 65 гостей. Он идеально подходит для
+          празднования дней рождений, корпоративных мероприятий, частных деловых
+          обедов и ужинов, презентаций новых продуктов, конференций и
+          праздничных вечеринок.
+        </div>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="about__picture">
+        <img src="./img/menu-picture.png" alt="" />
+      </div>
+      <div class="menu">
+        <div class="menu__title">МЕНЮ</div>
+        <div class="menu__list">
+          <div class="menu__item-page">ЕДА</div>
+          <div class="menu__item-page">НАПИТКИ</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="contact__info">
+        <div class="contact__block">
+          <div class="contact__title">ЧАСЫ РАБОТЫ</div>
+          <div class="contact__subtitle">ПН-ВС</div>
+          <div class="contact__item">11:30-14:30</div>
+          <div class="contact__item">17:30-22:00</div>
+        </div>
+        <div class="contact__block">
+          <div class="contact__title">НАШИ КОНТАКТЫ</div>
+          <div class="contact__item">
+            e-mail: <a href="mailto:meal@gmail.com">meal@gmail.com</a>
+          </div>
+          <div class="contact__item">
+            тел: <a href="tel:375339113933">+375 33 911 39 33</a>
+          </div>
+          <div class="contact__item">inst: the_meal</div>
+        </div>
+      </div>
+      <div class="contact__map" id="contact">
+        <div class="contact__map-title">ПРИХОДИТЕ К НАМ</div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.27843546871!2d27.556690815859046!3d53.891254880096824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfdb12398d2d%3A0xda87e12c7d16133f!2z0JHQtdC70L7RgNGD0YHRgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0YLQtdGF0L3QvtC70L7Qs9C40YfQtdGB0LrQuNC5INGD0L3QuNCy0LXRgNGB0LjRgtC10YI!5e0!3m2!1sru!2sby!4v1670428840375!5m2!1sru!2sby"
+          width="400"
+          height="370"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__copyright">© YRM_SAS 2023</div>
+          <div class="footer__link">Адрес: г. Минск, ул. Свердлова, 13а</div>
+          <div class="footer__link">
+            тел: <a href="tel:375339113933">+375 33 911 39 33</a>
+          </div>
+          <div class="footer__link">
+            e-mail: <a href="mailto:meal@gmail.com">meal@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
